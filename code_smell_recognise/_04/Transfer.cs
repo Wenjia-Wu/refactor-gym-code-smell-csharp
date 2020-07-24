@@ -2,8 +2,9 @@ namespace code_smell_recognise._04
 {
     public class Transfer
     {
-        public void Move(Account from, Account to, float amount) {
-            from.Debit(amount)
+        public void Move(Account from, Account to, float amount)
+        {
+            from.Debit(amount);
             to.Credit(amount);
             if (amount > 300) {
                 SendNotification(from, to);
